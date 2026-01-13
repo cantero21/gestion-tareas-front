@@ -1,0 +1,63 @@
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css');
+
+:root {
+  /* PALETA MINIMALISTA */
+  --color-primary: #455a64;       /* Blue Grey: Un gris azulado elegante para botones */
+  --color-accent: #5c9ead;        /* Un azul suave para detalles pequeños */
+  --color-bg-app: #f8f9fa;        /* Gris muy claro (casi blanco) de fondo */
+  --color-text-main: #2c3e50;     /* Gris oscuro para leer mejor (no negro puro) */
+  --color-card-shadow: rgba(0, 0, 0, 0.05); /* Sombra muy sutil */
+}
+
+body {
+  background-color: var(--color-bg-app);
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: var(--color-text-main);
+}
+
+/* Redefinir botones para que no sean tan fuertes */
+.btn-primary {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+  border-radius: 8px; /* Bordes un poco más cuadrados */
+}
+
+.btn-primary:hover {
+  background-color: #37474f;
+  border-color: #37474f;
+}
+
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.text-primary {
+  color: var(--color-primary) !important;
+}
+
+/* Tarjetas limpias estilo "Papel" */
+.custom-card {
+  border: 1px solid #e9ecef; /* Borde muy finito */
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--color-card-shadow);
+  background-color: white;
+}
+
+/* Navbar blanca y limpia (ya no es un bloque de color fuerte) */
+.navbar-custom {
+  background-color: white;
+  border-bottom: 1px solid #e9ecef;
+  box-shadow: 0 2px 4px var(--color-card-shadow);
+}
+
+/* Checkboxes más suaves */
+.form-check-input:checked {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}

@@ -11,7 +11,7 @@ export class TareaService {
   private http = inject(HttpClient);
 
   // Tu URL de Spring Boot
-  private apiUrl = 'http://localhost:8080/api/tareas';
+  private apiUrl = 'https://gestion-tareas-back-production.up.railway.app/api/tareas';
 
   // 1. Obtener todas
   getAll(): Observable<Tarea[]> {
